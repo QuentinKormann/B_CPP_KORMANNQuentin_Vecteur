@@ -46,7 +46,7 @@ float cVect2D::prodscaVect(float fltX, float fltY)
 
 float cVect2D::normeVect(float fltX, float fltY)
 {
-	return (float) sqrt(cbrt(fltX - m_fltX) + cbrt(fltY - m_fltY));
+	return sqrt((pow(fltX - m_fltX, 2)) + (pow(fltY - m_fltY, 2)));
 }
 
 cVect2D::cVect2D()
